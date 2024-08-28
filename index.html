@@ -3,70 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biolink GitHub</title>
+    <title>My BioLink</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 600px;
-            margin: 20px auto;
-            background: #fff;
+            background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
         }
-        .profile-img {
-            width: 150px;
-            height: 150px;
+        .profile-pic {
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            border: 3px solid #ddd;
-            object-fit: cover;
+            overflow: hidden;
+            margin: 0 auto;
             margin-bottom: 20px;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         h1 {
             font-size: 24px;
             margin: 0;
-            color: #333;
         }
         p {
-            font-size: 18px;
-            color: #555;
-        }
-        .links {
-            margin: 20px 0;
+            color: #777;
+            font-size: 14px;
+            margin: 10px 0;
         }
         .links a {
-            display: inline-block;
-            font-size: 16px;
-            color: #007bff;
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
             text-decoration: none;
-            margin: 5px 0;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .links a:hover {
-            text-decoration: underline;
+            background-color: #0056b3;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Foto Profil -->
-        <img src="URL_TO_YOUR_PROFILE_PICTURE" alt="Profile Picture" class="profile-img">
-        
-        <!-- Nama dan Deskripsi -->
-        <h1>Your Name</h1>
-        <p>Short bio or description about yourself</p>
-        
-        <!-- Link GitHub dan Sosial Media -->
+        <div class="profile-pic">
+            <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Profile Picture">
+        </div>
+        <h1>John Doe</h1>
+        <p>Full-Stack Developer & Open-Source Enthusiast</p>
         <div class="links">
-            <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
-            <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <!-- Add more links as needed -->
+            <a href="https://github.com/username" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://username.com" target="_blank">Personal Website</a>
+            <a href="https://dev.to/username" target="_blank">Dev.to Blog</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://twitter.com/username" target="_blank">🐦</a>
+            <a href="https://instagram.com/username" target="_blank">📷</a>
+            <a href="https://facebook.com/username" target="_blank">📘</a>
         </div>
     </div>
 </body>
